@@ -27,7 +27,7 @@ Modern phishing attacks often bypass traditional static blacklists through short
 
 ---
 
-## ⚡ Technical & DSA Architecture
+## ⚡ Technical  Architecture
 
 PhishGuard employs 5 heuristic analysis vectors to score incoming targets:
 
