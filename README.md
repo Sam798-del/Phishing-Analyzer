@@ -32,7 +32,7 @@ Modern phishing attacks often bypass traditional static blacklists through short
 PhishGuard employs 5 heuristic analysis vectors to score incoming targets:
 
 | Heuristic Vector | Detection Logic | 
-| :--- | :--- | :--- |
+| :--- | :--- | 
 | **1. Protocol Verification** | Checks for unencrypted `http://` vs secure `https://` |
 | **2. Numeric IP Hostname** | RegEx pattern matching (`/\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b/`) |
 | **3. High-Risk TLD Check** | Set lookup against abuse-prone extensions (`.xyz`, `.top`, `.free`) | 
