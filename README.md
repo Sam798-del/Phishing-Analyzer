@@ -31,13 +31,13 @@ Modern phishing attacks often bypass traditional static blacklists through short
 
 PhishGuard employs 5 heuristic analysis vectors to score incoming targets:
 
-| Heuristic Vector | Detection Logic & Algorithm | Time Complexity |
+| Heuristic Vector | Detection Logic | 
 | :--- | :--- | :--- |
-| **1. Protocol Verification** | Checks for unencrypted `http://` vs secure `https://` | $O(1)$ |
-| **2. Numeric IP Hostname** | RegEx pattern matching (`/\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b/`) | $O(N)$ |
-| **3. High-Risk TLD Check** | Set lookup against abuse-prone extensions (`.xyz`, `.top`, `.free`) | $O(1)$ |
-| **4. Typosquatting / Character Swap** | Substring Homoglyph matching (`paypa1`, `g00gle`, `arnazon`) | $O(K \cdot N)$ |
-| **5. Social Engineering Urgency** | Text array parsing for psychological pressure keywords | $O(W \cdot N)$ |
+| **1. Protocol Verification** | Checks for unencrypted `http://` vs secure `https://` |
+| **2. Numeric IP Hostname** | RegEx pattern matching (`/\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b/`) |
+| **3. High-Risk TLD Check** | Set lookup against abuse-prone extensions (`.xyz`, `.top`, `.free`) | 
+| **4. Typosquatting / Character Swap** | Substring Homoglyph matching (`paypa1`, `g00gle`, `arnazon`) |
+| **5. Social Engineering Urgency** | Text array parsing for psychological pressure keywords | 
 
 ---
 
